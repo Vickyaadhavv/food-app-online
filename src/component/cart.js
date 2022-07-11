@@ -1,8 +1,16 @@
 import React, { useState , useEffect} from "react";
-import "../styles/cart.css"
+//import Order from "../orderdata";
+import "../styles/cart.css";
 
 const Cart=({setCart,cart,handleChange })=>{
-    const [price, setPrice]= useState(0)
+    const [price, setPrice]= useState(0);
+    const [order, setOrder]= useState([]);
+   
+
+    const handleOrder =(item)=>{
+      if (order.indexOf(item) !== -1)  return;
+      setOrder([...cart,item]);
+    }
 
      const handleRemove =(id)=>{
     const arr = cart.filter((item) => item.id !== id);
@@ -40,14 +48,23 @@ const handlePrice = () => {
             <div className="total">
         <span>Total Price of your Cart</span>
         <span>Rs - {price}</span>
-        <button>place Order</button>
+        <button onClick={()=>handleOrder(order)}>place Order</button>
       </div>
       </div>
       <div  className="whole">
            <h1>Your Order</h1>
          <div className="search-box">
            <input type="search" placeholder="search" />
-           <div className="orders"></div>
+           <div>
+           {order.map((item)=>(
+                 <div key={item.id}>
+                   <p>{item.title}</p>
+                 <div>
+                   <span>{item.price}</span>
+                 </div>
+               </div>
+            ))}
+           </div>
          </div>
          </div>
 

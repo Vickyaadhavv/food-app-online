@@ -5,6 +5,7 @@ import Amazon from "./component/amazon";
 import Navbar from "./component/navbar";
 import Cart from "./component/cart";
 
+
 const App = ()=>{
     const [show , setShow]=useState(true);
      const [cart, setCart] =useState([]);
