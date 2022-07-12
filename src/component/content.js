@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/amazon.css"
+import "../styles/content.css"
 import List from "../data";
 import Card from "./card";
 
@@ -21,7 +21,6 @@ const Content=({handleClick})=>{
                 <button className="btn"  onClick={()=>filterResult("desserts")}>Desserts</button>
                 <button className="btn" onClick={()=>setData(List)}>All</button>
               </div>
-        
       <section>
         {data.map((item)=>(<Card key={item.id} item ={item} handleClick={handleClick}/>))}
       </section>

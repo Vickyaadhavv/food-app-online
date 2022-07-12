@@ -14,6 +14,6 @@ return(
         <button onClick={()=>handleClick(item)}>Add to cart</button>        
      </div>
     </div>
-);
+)
 };
 export default Card;

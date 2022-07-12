@@ -140,7 +140,7 @@ const List =[
          price: 168,
          image:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/rvx2zysu2fwouvqivk3y",
          amount:1,
-         },
+       },
 ]
 
 export default List;

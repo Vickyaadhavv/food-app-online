@@ -89,7 +89,7 @@ const Cart=({ setCart,cart,handleChange })=>{
         </div>
         <>
     <div className="ro">
-          <h1>recent orders</h1>
+          <h1>Orders History</h1>
           <div className="order-btn">
                 <button className="btnn" onClick={()=>filterResult("Vegitarian")}>Veg</button>
                 <button className="btnn" onClick={()=>filterResult("non-Veg")}>Non-veg</button>

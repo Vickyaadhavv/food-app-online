@@ -10,8 +10,7 @@ const Navbar = ({setShow,size}) =>{
                      <span>{size}</span>
                 </div>
              </div>
-        </nav>
-        
+        </nav>   
     )
 }
 export  default Navbar;

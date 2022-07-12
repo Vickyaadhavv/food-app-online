@@ -5,11 +5,10 @@ import Navbar from "./component/navbar";
 import Cart from "./component/cart";
 import Content from "./component/content";
 
-
 const App = ()=>{
     const [show , setShow]=useState(true);
      const [cart, setCart] =useState([]);
-    const[isempty, setempty] =useState({show:"false",msg:""})
+    
    
    const handleClick = (item) =>{
         if (cart.indexOf(item) !== -1) return;

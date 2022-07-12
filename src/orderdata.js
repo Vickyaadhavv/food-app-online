@@ -1,4 +1,4 @@
-const orderData =[{
+const orderData = [{
     id:1,
     title: "Dosa",
     type:"Vegitarian",
@@ -6,7 +6,7 @@ const orderData =[{
     price: 50,
     ORDER_DATE: "1-7-2022",
     ORDER_TIME: "14-30PM",
-    amount:1,
+    amount:1
     },
 {
 id:2,
