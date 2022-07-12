@@ -3,7 +3,7 @@ import "../styles/amazon.css"
 import List from "../data";
 import Card from "./card";
 
-const Amazon=({handleClick})=>{
+const Content=({handleClick})=>{
   const [data,setData]= useState(List);
     const filterResult =(curItem)=>{
         const result =List.filter((curData)=>{
@@ -13,12 +13,13 @@ const Amazon=({handleClick})=>{
     }
     return(
       <div>
+        <h1 className="head">Take a Seat,Grap a Treat😍</h1>
         <div className="container" >
         <div className="buttons">
-                <button className="btn" onClick={()=>setData(List)}>Recommended</button>
                 <button className="btn" onClick={()=>filterResult("Vegitarian")}>Veg</button>
                 <button className="btn" onClick={()=>filterResult("non-Veg")}>Non-veg</button>
                 <button className="btn"  onClick={()=>filterResult("desserts")}>Desserts</button>
+                <button className="btn" onClick={()=>setData(List)}>All</button>
               </div>
         
       <section>
@@ -28,4 +29,4 @@ const Amazon=({handleClick})=>{
       </div>
     )
 }
-export default Amazon;
+export default Content;

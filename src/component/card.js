@@ -11,7 +11,7 @@ return(
         <p>{title}</p>
         <p>{type}</p>
         <p>{price}</p>
-        <button onClick={()=>handleClick(item)}>Add to cart</button>
+        <button onClick={()=>handleClick(item)}>Add to cart</button>        
      </div>
     </div>
 );

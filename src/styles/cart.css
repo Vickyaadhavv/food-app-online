@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500&family=Lora:wght@400;500&family=Poppins:wght@400;600&display=swap");
+
 * {
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
   }
   .content{
     display: flex;
@@ -13,8 +16,9 @@
   }
   
   .cart_box img {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
   }
   .cart_img {
     display: flex;
@@ -80,10 +84,81 @@
     color: green;
     font-weight: bold;
   }
+  .op{
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin-left: 70%;
+    cursor: pointer;
+    transition: .4s ease-in;
+  }
+  .op:hover{
+    box-shadow: 10px 10px 0px red;
+  }
   .whole{
     width: 40%;
     margin-left: 5rem;
     align-items: center;
-    
     text-align: center;
+    margin-left: 3em;
+  }
+  .orders{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    margin-left: 15%;
+  }
+  .placed{
+    border: 1px solid rgb(15, 160, 15);
+    background-color:rgb(15, 160, 15) ;
+    padding: 5px;
+    color: white;
+    margin-left: 50%;
+    margin-top: 10px;
+    width: 30%;
+  }
+  .tp{
+    font-size: 1.5rem;
+    margin-top: 1em;
+    font-weight: bolder;
+    color: black;
+  }
+  .ta{
+    
+      font-size: 1.5rem;
+      margin-top: 1em;
+      font-weight: bolder;
+      color: black;
+      margin-left: 3px;
+  }
+  .mc{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .ro{
+    margin-top: 10px;
+  }
+  .order-btn{
+    display: flex;
+    margin-left: 15%;
+  }
+  .btnn{
+    border: none;
+    outline: none;
+    color: black;
+    padding-left: 5%;
+    background-color: yellow;
+    font-weight: bold;
+    padding-right:5% ;
+    cursor: pointer;
+  }
+  .btnn:hover{
+    color: white;
+    background-color: black;
   }
